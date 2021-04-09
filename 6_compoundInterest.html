@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>java Script Compound interest</title>
+</head>
+<body>
+<script>
+    var p=parseInt(prompt("Enter the Principal Amount"));
+    var r=parseInt(prompt("Enter the Rate % of Interest"));
+    var n=parseInt(prompt("Enter the Time (years) Period"));
+
+    //formula for finding the Compound Interest ----------------------
+    var amount=p*(Math.pow(1+(r/100),n));
+    
+    
+    document.write("Amount="+amount+"<br>");
+    
+    </script>
+</body>
+</html>

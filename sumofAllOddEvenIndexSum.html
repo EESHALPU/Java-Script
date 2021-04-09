@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Size Arrays</title>
+</head>
+<body>
+<h1 align=center>Sum of All Array Elements at Index at Even and Odd index</h1>
+<script>
+
+    var num=parseInt(prompt("Enter Number of elements"));
+    var number=new Array(num);
+    for(i=0;i<number.length;i++)
+    {
+        number[i]=parseInt(prompt("Enter " + (i+1)+" Number"));
+    }
+
+    var osum=0,esum=0;
+    for(i=0;i<number.length;i++)
+    {
+        if(i%2==0)
+        esum=esum+number[i];
+        else
+        osum=osum+number[i];        
+                
+    }
+
+
+    document.write("Sum of All Element at Even Index ="+esum);
+    document.write("</br>"+"Sum of All Element at Odd Index ="+osum);
+
+
+</script>
+    
+</body>
+</html>

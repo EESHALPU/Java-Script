@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            FIrst letter in Upper
+        </title>
+        
+    </head>
+    <body bgcolor="skyblue">
+        <h1 align=center> <u>First Character should be in Upper Case </u></h1>
+        <script language="javascript">
+
+            var name=prompt("Enter your Name=");
+            name=name.toLowerCase();
+        
+            var firstChar=name.slice(0,1); //first character is assigned 
+         
+            var lastRestChar=name.slice(1,name.length);//Last rest character is assigned 
+
+           firstChar=firstChar.toUpperCase();
+           document.write(firstChar+lastRestChar);
+           alert("Hello "+(firstChar+lastRestChar)); 
+        </script>
+    </body>
+</html>

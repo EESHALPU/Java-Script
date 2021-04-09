@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>
+         Q3. All String Function
+        </title>
+        
+    </head>
+    <body bgcolor="skyblue">
+        <h1 align=center> <u>Q3. Concept of String and Function </u></h1>
+        <script language="javascript">
+
+            //var name=prompt("Enter your Name=");
+
+            var name="javascript is dynamic programming language and it is very useful for web";
+
+
+            //in lower case
+            var lower=name.toLowerCase();
+        
+            var firstChar=lower.slice(0,1); //first character is assigned 
+         
+            var lastRestChar=lower.slice(1,name.length);//Last rest character is assigned 
+
+           firstChar=firstChar.toUpperCase();   //convert into upper case
+
+           document.write("<br>"+firstChar+lastRestChar);
+
+          
+           document.write("<br>"+name.substr(2,8));  //substr function will print start from 2 and next 8 char more.
+           
+            document.write("<br>"+name.substring(2,8));  //substring function -> it will print all char  from 2 to 8 . 
+
+
+        // length function
+            var len=name.length;
+
+            document.write("<br>"+name.substring(2,4));
+
+            
+            //Includes function for finding a word from sentence
+            
+            document.write("<br>"+name.includes("dynamic"));
+
+
+        //startWith and endWith string function 
+
+    
+        
+        document.write("<br>"+name.startsWith("java"));  //if start with java
+
+        document.write("1<br>"+name.endsWith("language"));  //if end with language
+
+
+
+        // search and it will return the index value of of char
+
+        document.write("<br>"+name.search("is"));
+
+
+        //match and it will return  all matched the word in the given parameter g means globally 
+
+        document.write("<br>"+name.match(/is/g));
+
+
+        //indexOf and lastIndexOf 
+
+        document.write("<br>"+name.indexOf("is"));
+        document.write("<br>"+name.lastIndexOf("is"));
+
+        //Replace, Trim,charAt(),
+
+        document.write("<br>"+name.replace("javascript","php"));
+
+        var str="                 javaScript        ";
+
+       //  str=str.trim();
+       //alert(str);
+
+
+       //-----------------------------------charAt()------------------------------------
+       document.write("<br>"+name.charAt(8));
+
+
+
+
+       //--------------charCodeAt() and fromCharCode()
+
+       document.write("<br>"+name.charCodeAt(3));// it will print the ASCII value of given index character
+
+       document.write("<br>"+String.fromCharCode(1));// it is reverse of above function
+
+
+
+       //concatination of two string
+
+       var str1="Hello";
+       var str2="World"
+       document.write("<br>"+str1.concat(str2));
+
+
+
+        </script>
+    </body>
+</html>

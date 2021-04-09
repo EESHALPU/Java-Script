@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seach Arrays</title>
+</head>
+<body>
+<h1 align=center>Search  Array Elements</h1>
+<script>
+
+    var num=parseInt(prompt("Enter Number of elements"));
+    var number=new Array(num);
+    for(i=0;i<number.length;i++)
+    {
+        number[i]=parseInt(prompt("Enter " + (i+1)+" Number"));
+    }
+
+    var element=prompt("Enter Element which you want to Search");
+
+   
+    for(i=0;i<number.length;i++)
+    {
+        if(number[i]==element)
+        {
+            document.write("Element "+ element+" Found at Index="+i);
+        }
+                
+    }
+
+
+</script>
+    
+</body>
+</html>
